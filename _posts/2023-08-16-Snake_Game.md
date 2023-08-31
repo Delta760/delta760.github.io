@@ -3,7 +3,7 @@ toc: true
 comments: false
 layout: post
 title: Snake game
-description: Example hacks!!! This shows procedures performed by student, not the procedures for the entire class.  Modified or prunned for specific machine.
+description: A basic snake game.
 courses: { compsci: {week: 2} }
 type: hacks
 ---
