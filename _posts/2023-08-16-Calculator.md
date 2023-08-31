@@ -3,7 +3,7 @@ toc: true
 comments: false
 layout: post
 title: Calculator
-description: For math
+description: Build for quick access
 courses: { compsci: {week: 2} }
 type: hacks
 ---
