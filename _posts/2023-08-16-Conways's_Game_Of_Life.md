@@ -12,6 +12,12 @@ type: hacks
     #container {
     display: grid;
     }
+
+    .cell {
+        background-color: royalblue;
+        border: 1px solid black;
+    }
+
 </style>
 
 <div class="container">
