@@ -1,0 +1,8 @@
+---
+toc: true
+comments: false
+title: Tic-Tac-Toe
+description: A two player tic-tac-toe game.
+courses: { compsci: {week: 3}}
+type: tangibles
+---
