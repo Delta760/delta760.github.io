@@ -1,11 +1,14 @@
 ---
 toc: true
 comments: false
+layout: post
 title: Roulette
 description: A Roulette game commonly found in casino's
 courses: { compsci: {week: 3}}
 type: tangibles
 ---
+
+![Roulette_image](/student/images/download.jpeg)
 
 <html>
 <head>
