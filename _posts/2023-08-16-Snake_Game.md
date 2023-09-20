@@ -20,8 +20,8 @@ type: hacks
     canvas{
         display: none;
         border-style: solid;
-        border-width: 10px;
-        border-color: #FFFFFF;
+        border-width: 20px;
+        border-color: #FF0000;
     }
     canvas:focus{
         outline: none;
@@ -332,7 +332,7 @@ type: hacks
         /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
         let activeDot = function(x, y){
-            ctx.fillStyle = "#FFFFFF";
+            ctx.fillStyle = "#FF0000";
             ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
         }
         /* Random food placement */
@@ -367,7 +367,7 @@ type: hacks
         /////////////////////////////////////////////////////////////
         let setWall = function(wall_value){
             wall = wall_value;
-            if(wall === 0){screen_snake.style.borderColor = "#606060";}
+            if(wall === 0){screen_snake.style.borderColor = "#FFFFFF";}
             if(wall === 1){screen_snake.style.borderColor = "#FFFFFF";}
         }
     })();
