@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Extra Credit
 description: Who I think should recieve extra credit
-courses: { compsci: {week: 12} }
+courses: { compsci: {week: 12}}
 type: tangibles
 ---
 
