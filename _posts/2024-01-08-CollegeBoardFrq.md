@@ -2,7 +2,7 @@
 toc: True
 comments: False
 layout: post
-title: Free response quest.
+title: Multiple choice response questions
 description: Internet and basic protocols
 type: tangibles
 courses: {'compsci': {'week': 1}}
