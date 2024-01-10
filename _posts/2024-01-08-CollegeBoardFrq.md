@@ -14,3 +14,4 @@ courses: {'compsci': {'week': 1}}
 - 49: The correct answer is C I accidentally Miscounted the amount of bits required for 100 data points
 - 50: The correct answer is D as I did not know that N^2 was considered a reasonable processing time.
 - 52: You cannot determine the average given only the final outcome and thus the correct answer is A.
+
