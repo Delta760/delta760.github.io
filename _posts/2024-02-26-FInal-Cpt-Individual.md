@@ -27,7 +27,7 @@ My feature in the project is ordering and creating the main menu screens as well
 
 # Component B: Video
 
-[Link to Video](https://drive.google.com/file/d/1ZfDdQ5x0vMFbANHlCg8nE2eyQTTgQG3Z/view?usp=sharing)
+[Link to Video](https://drive.google.com/file/d/1JMePeUt6cm37e1fDz6z1EW7EAiIKx9nh/view?usp=sharing)
 
 
 | Collegboard Requirements | My Video |
