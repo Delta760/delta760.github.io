@@ -1,6 +1,12 @@
 ---
-layout: default
-title: Grayson G. Blog
+toc: true
+comments: false
+title: JWT Login (python/flask)
+layout: post
+description: A login screen that interacts with Python and obtains a JWT  
+type: tangibles
+courses: { compsci: {week: 2}}
+permalink: /login
 ---
 
 <!-- 
@@ -8,8 +14,6 @@ A simple HTML login form with a Login action when the button is pressed.
 
 The form triggers the login_user function defined in the JavaScript below when the Login button is pressed.
 -->
-## Login
-
 <form action="javascript:login_user()">
     <p><label>
         User ID:
@@ -22,12 +26,8 @@ The form triggers the login_user function defined in the JavaScript below when t
     <p>
         <button>Login</button>
     </p>
-
 </form>
-<h3>Dont have an account?</h3>
-<form action="{{site.baseurl}}/signup">
-  <button type="submit">Signup</button>
-  </form>
+
 <!-- 
 Below JavaScript code is designed to handle user authentication in a web application. It's written to work with a backend server that uses JWT (JSON Web Tokens) for authentication.
 
@@ -62,7 +62,6 @@ The script defines a function when the page loads. This function is triggered wh
             if (!response.ok) {
                 const errorMsg = 'Login error: ' + response.status;
                 console.log(errorMsg);
-                window.location.href = "{{site.baseurl}}/Error";
                 return;
             }
             // Success!!!

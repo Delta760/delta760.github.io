@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Grayson G. Blog
+permalink: /signup
 ---
 
 <!-- 
@@ -8,26 +9,35 @@ A simple HTML login form with a Login action when the button is pressed.
 
 The form triggers the login_user function defined in the JavaScript below when the Login button is pressed.
 -->
-## Login
+## Sign Up
 
-<form action="javascript:login_user()">
+<form action="javascript:signup_user()">
     <p><label>
         User ID:
         <input type="text" name="uid" id="uid" required>
+    </label></p>
+        <p><label>
+        Name: 
+        <input type="text" name="name" id="name" required>
+    </label></p>
+        <p><label>
+        DOB:
+        <input type="date" name="dob" id="dob" required>
     </label></p>
     <p><label>
         Password:
         <input type="password" name="password" id="password" required>
     </label></p>
+        <p><label>
+        Nick:
+        <input type="text" name="Nick" id="Nick" required>
+    </label></p>
     <p>
-        <button>Login</button>
+        <button>Signup</button>
     </p>
 
 </form>
-<h3>Dont have an account?</h3>
-<form action="{{site.baseurl}}/signup">
-  <button type="submit">Signup</button>
-  </form>
+
 <!-- 
 Below JavaScript code is designed to handle user authentication in a web application. It's written to work with a backend server that uses JWT (JSON Web Tokens) for authentication.
 
@@ -37,14 +47,17 @@ The script defines a function when the page loads. This function is triggered wh
     // uri variable and options object are obtained from config.js
     import { uri, options } from '{{site.baseurl}}/assets/js/api/config.js';
 
-    function login_user(){
+    function signup_user(){
         // Set Authenticate endpoint
-        const url = uri + '/api/users/authenticate';
+        const url = uri + '/api/users/';
 
         // Set the body of the request to include login data from the DOM
         const body = {
             uid: document.getElementById("uid").value,
+            name: document.getElementById("name").value,
             password: document.getElementById("password").value,
+            dob: document.getElementById("dob").value,
+            Nick: document.getElementById("Nick").value,
         };
 
         // Change options according to Authentication requirements
@@ -60,9 +73,8 @@ The script defines a function when the page loads. This function is triggered wh
         .then(response => {
             // handle error response from Web API
             if (!response.ok) {
-                const errorMsg = 'Login error: ' + response.status;
+                const errorMsg = 'Signup error: ' + response.status;
                 console.log(errorMsg);
-                window.location.href = "{{site.baseurl}}/Error";
                 return;
             }
             // Success!!!
@@ -76,5 +88,5 @@ The script defines a function when the page loads. This function is triggered wh
     }
 
     // Attach login_user to the window object, allowing access to form action
-    window.login_user = login_user;
+    window.signup_user = signup_user;
 </script>

@@ -9,6 +9,7 @@ courses: {'compsci': {'week': 1}}
 ---
 # Problems Missed
 - 1: Idk what i was thinking the correct answer is C I assume this was a misclick.
+Link to Problem: 
 - 12: The correct answer is C I miscalculated the binary number.
 - 34: The correct answer is C I misinterpereted the direction of the turn
 - 49: The correct answer is C I accidentally Miscounted the amount of bits required for 100 data points
