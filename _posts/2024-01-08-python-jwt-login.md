@@ -39,6 +39,7 @@ The script defines a function when the page loads. This function is triggered wh
 
     function login_user(){
         // Set Authenticate endpoint
+        console.log("break1")
         const url = uri + '/api/users/authenticate';
 
         // Set the body of the request to include login data from the DOM
@@ -56,8 +57,10 @@ The script defines a function when the page loads. This function is triggered wh
         };
 
         // Fetch JWT
+        
         fetch(url, authOptions)
         .then(response => {
+            console.log("break2")
             // handle error response from Web API
             if (!response.ok) {
                 const errorMsg = 'Login error: ' + response.status;
